@@ -11,6 +11,10 @@
 
 TinyLara is a simple PHP framework based on Composer, looks like a Lite Edition of Laravel. http://tinylara.com/
 
+##Github
+
+Github Repo: [https://github.com/TinyLara/TinyLara](https://github.com/TinyLara/TinyLara)
+
 ## Start
 ### Download:
 ```
