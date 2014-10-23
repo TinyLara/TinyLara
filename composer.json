@@ -1,0 +1,23 @@
+{
+  "name": "TinyLara/TinyLara",
+  "description": "A Simple PHP Framework based on Composer, looks like a Lite Edition of Laravel.",
+  "keywords": ["tiny", "simple", "framework", "laravel"],
+  "license": "MIT",
+  "require": {
+    "codingbean/macaw": "dev-master",
+    "illuminate/database": "*",
+    "filp/whoops": "*",
+    "nette/mail": "*",
+    "predis/predis": "*"
+  },
+  "autoload": {
+    "classmap": [
+      "app/controllers",
+      "app/models",
+      "services"
+    ]
+  },
+  "config": {
+    "preferred-install": "dist"
+  }
+}
