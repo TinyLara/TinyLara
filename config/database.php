@@ -3,9 +3,9 @@
 return [
   'driver'    => 'mysql',
   'host'      => 'localhost',
-  'database'  => 'mffc',
+  'database'  => 'tinylara',
   'username'  => 'root',
-  'password'  => 'C4F075C4',
+  'password'  => 'password',
   'charset'   => 'utf8',
   'collation' => 'utf8_general_ci',
   'prefix'    => ''

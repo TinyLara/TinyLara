@@ -1,12 +1,12 @@
 # *TinyLara*
 
 ```
-  ______    _                      __                         
+  ______    _                      __
  /_  __/   (_)   ____    __  __   / /   ____ _   _____  ____ _
   / /     / /   / __ \  / / / /  / /   / __ `/  / ___/ / __ `/
- / /     / /   / / / / / /_/ /  / /___/ /_/ /  / /    / /_/ / 
-/_/     /_/   /_/ /_/  \__, /  /_____/\__,_/  /_/     \__,_/  
-                      /____/                                  
+ / /     / /   / / / / / /_/ /  / /___/ /_/ /  / /    / /_/ /
+/_/     /_/   /_/ /_/  \__, /  /_____/\__,_/  /_/     \__,_/
+                      /____/
 ```
 
 TinyLara is a simple PHP framework based on Composer, looks like a Lite Edition of Laravel. http://tinylara.com/
@@ -31,27 +31,25 @@ Then modify `app/database.php` with right information and import `demo.sql`.
 ### See:
 
 *config/routes.php :*
-    
+
     Macaw::get('', 'HomeController@home');
-    
+
 *app/controllers/HomeController.php :*
 
     public function home()
     {
       // build view sample
       $this->view = View::make('home')->with('article',Article::first())
-                                      ->withTitle('MFFC :-D')
+                                      ->withTitle('TinyLara :-D')
                                       ->withFooBar('foo_bar');
-      /*
+
       // build mail sample
-      $this->mail = Mail::to(['ooxx@gmail.com', 'ooxx@qq.com'])
-                          ->from('OOXX <ooxx@163.com>')
-                          ->title('Foo Bar')
-                          ->content('<h1>Hello~~</h1>');
+      $this->mail = Mail::to('foo@bar.io')->from('bar@foo.io')
+                                          ->title('Foo Bar')
+                                          ->content('<h1>Hello~~</h1>');
       // redis sample
       Redis::set('key','value',3000,'ms');
       echo Redis::get('key');
-      */
     }
 
 ### Run:
