@@ -5,7 +5,6 @@
 class BaseController {
 
   protected $view;
-  protected $mail;
 
   public function __construct()
   {
