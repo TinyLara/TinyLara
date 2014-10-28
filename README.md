@@ -9,19 +9,19 @@
                       /____/
 ```
 
-TinyLara is a Simple PHP Framework based on Composer, looks like a Tiny Laravel. [中文简介](https://github.com/TinyLara/TinyLara#中文简介)
+TinyLara is a Simple PHP Framework based on Composer, looks like a Tiny Laravel. [中文简介](#中文简介)
 
 ## Start
 ### Download:
 
-```
+```bash
 git clone https://github.com/TinyLara/TinyLara
 cd TinyLara
 ```
 
 OR:
 
-```
+```bash
 wget https://codeload.github.com/TinyLara/TinyLara/legacy.zip/master
 unzip master
 cd TinyLara*
@@ -29,7 +29,7 @@ cd TinyLara*
 
 ### Install dependencies:
 
-```
+```bash
 composer update
 ```
 
@@ -39,13 +39,13 @@ Then modify `app/database.php` with right information and import `demo.sql`.
 
 *config/routes.php :*
 
-```
+```php
 Route::get('', 'HomeController@home');
 ```
 
 *app/controllers/HomeController.php :*
 
-```
+```php
 public function home()
 {
   // mail sample
@@ -65,7 +65,7 @@ public function home()
 ```
 
 ### Run:
-```
+```bash
 cd public && php -S 127.0.0.1:3000
 ```
 Visit [http://127.0.0.1:3000/](http://127.0.0.1:3000/)
@@ -101,14 +101,14 @@ Github 项目地址：https://github.com/TinyLara/TinyLara
 ##开始使用
 
 ###下载：
-```
+```bash
 git clone https://github.com/TinyLara/TinyLara
 cd TinyLara
 ```
 
 或者：
 
-```
+```bash
 wget https://codeload.github.com/TinyLara/TinyLara/legacy.zip/master
 unzip master
 cd TinyLara*
@@ -116,7 +116,7 @@ cd TinyLara*
 
 ###安装依赖包：
 
-```
+```bash
 composer update
 ```
 
@@ -127,13 +127,13 @@ composer update
 
 *config/routes.php :*
 
-```
+```php
 Route::get('', 'HomeController@home');
 ```
 
 *app/controllers/HomeController.php :*
 
-```
+```php
 public function home()
 {
   // mail sample
@@ -153,7 +153,7 @@ public function home()
 ```
 
 ###运行项目：
-```
+```bash
 cd public && php -S 127.0.0.1:3000
 ```
 访问 [http://127.0.0.1:3000/](http://127.0.0.1:3000/)
