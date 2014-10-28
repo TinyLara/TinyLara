@@ -8,8 +8,8 @@ Route::get('foo', function() {
   echo "Foo!";
 });
 
-Route::$error_callback = function() {
+Route::error(function() {
   throw new Exception("404 Not Found");
-};
+});
 
 Route::dispatch();
