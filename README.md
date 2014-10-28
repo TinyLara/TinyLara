@@ -38,15 +38,16 @@ Then modify `app/database.php` with right information and import `demo.sql`.
 
     public function home()
     {
-      // build view sample
+      // view sample
       $this->view = View::make('home')->with('article',Article::first())
                                       ->withTitle('TinyLara :-D')
                                       ->withFooBar('foo_bar');
 
-      // build mail sample
-      $this->mail = Mail::to('foo@bar.io')->from('bar@foo.io')
-                                          ->title('Foo Bar')
-                                          ->content('<h1>Hello~~</h1>');
+      // mail sample
+      Mail::to('foo@bar.io')->from('bar@foo.io')
+                            ->title('Foo Bar')
+                            ->content('<h1>Hello~~</h1>')
+                            ->send();
       // redis sample
       Redis::set('key','value',3000,'ms');
       echo Redis::get('key');

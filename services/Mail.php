@@ -65,4 +65,11 @@ class Mail extends Message {
     $this->setHTMLBody($content);
     return $this;
   }
+
+  // send mail
+  public function send()
+  {
+    $mailer = new Nette\Mail\SmtpMailer($this->config);
+    $mailer->send($this);
+  }
 }

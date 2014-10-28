@@ -12,9 +12,10 @@ class HomeController extends BaseController {
                                     ->withFooBar('foo_bar');
     /*
     // build mail sample
-    $this->mail = Mail::to('foo@bar.io')->from('bar@foo.io')
-                                        ->title('Foo Bar')
-                                        ->content('<h1>Hello~~</h1>');
+    Mail::to('foo@bar.io')->from('bar@foo.io')
+                          ->title('Foo Bar')
+                          ->content('<h1>Hello~~</h1>')
+                          ->send();
     // redis sample
     Redis::set('key','value',3000,'ms');
     echo Redis::get('key');
