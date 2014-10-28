@@ -32,7 +32,7 @@ Then modify `app/database.php` with right information and import `demo.sql`.
 
 *config/routes.php :*
 
-    Macaw::get('', 'HomeController@home');
+    Route::get('', 'HomeController@home');
 
 *app/controllers/HomeController.php :*
 
