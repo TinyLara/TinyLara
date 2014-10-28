@@ -4,7 +4,7 @@
   "keywords": ["tiny", "simple", "framework", "laravel"],
   "license": "MIT",
   "require": {
-    "codingbean/macaw": "dev-master",
+    "tinylara/tinyroute": "dev-master",
     "illuminate/database": "*",
     "filp/whoops": "*",
     "nette/mail": "*",

@@ -1,6 +1,6 @@
 <?php
 
-use NoahBuscher\Macaw\Macaw as Route;
+use TinyLara\TinyRoute\TinyRoute as Route;
 
 Route::get('', 'HomeController@home');
 
@@ -12,4 +12,4 @@ Route::error(function() {
   throw new Exception("404 Not Found");
 });
 
-Route::dispatch();
+Route::dispatch('View@process');

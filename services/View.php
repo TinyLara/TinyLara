@@ -28,6 +28,16 @@ class View {
     }
   }
 
+  public static function process($view)
+  {
+    if ( $view instanceof View ) {
+      extract($view->data);
+      require $view->view;
+    } else {
+      throw new UnexpectedValueException("\$view must be instance of View!");
+    }
+  }
+
   public function with($key, $value = null)
   {
     $this->data[$key] = $value;
