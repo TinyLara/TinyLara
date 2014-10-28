@@ -63,7 +63,7 @@ Visit [http://127.0.0.1:3000/](http://127.0.0.1:3000/)
 
 ## Features
 
-1. Suer small (~150 LOC) router: fast and sexy [codingbean/macaw](codingbean/macaw)
+1. Suer small (~150 LOC) router: fast and sexy [codingbean/macaw](https://packagist.org/packages/codingbean/macaw)
 2. MVC architecture
 3. One of the Most powerful PHP ORM on Earth: [Laravel Eloquent](http://laravel.com/docs/4.2/eloquent)
 4. Powerful Laravel-style views loader
