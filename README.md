@@ -22,13 +22,21 @@ git clone https://github.com/TinyLara/TinyLara
 cd TinyLara
 ```
 
+OR:
+
+```
+wget https://codeload.github.com/TinyLara/TinyLara/legacy.zip/master
+unzip master
+cd TinyLara*
+```
+
 ### Install dependencies:
 
     composer update
 
 Then modify `app/database.php` with right information and import `demo.sql`.
 
-### See:
+### Just see:
 
 *config/routes.php :*
 
