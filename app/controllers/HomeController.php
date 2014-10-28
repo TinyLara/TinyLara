@@ -19,7 +19,7 @@ class HomeController extends BaseController {
 
     // view sample
     return View::make('home')->with('article',Article::first())
-                                    ->withTitle('TinyLara :-D')
-                                    ->withFooBar('foo_bar');
+                              ->withTitle('TinyLara :-D')
+                              ->withFooBar('foo_bar');
   }
 }

@@ -38,11 +38,6 @@ Then modify `app/database.php` with right information and import `demo.sql`.
 
     public function home()
     {
-      // view sample
-      $this->view = View::make('home')->with('article',Article::first())
-                                      ->withTitle('TinyLara :-D')
-                                      ->withFooBar('foo_bar');
-
       // mail sample
       Mail::to('foo@bar.io')->from('bar@foo.io')
                             ->title('Foo Bar')
@@ -51,6 +46,11 @@ Then modify `app/database.php` with right information and import `demo.sql`.
       // redis sample
       Redis::set('key','value',3000,'ms');
       echo Redis::get('key');
+
+      // view sample
+      return View::make('home')->with('article',Article::first())
+                                ->withTitle('TinyLara :-D')
+                                ->withFooBar('foo_bar');
     }
 
 ### Run:
@@ -64,7 +64,7 @@ Visit [http://127.0.0.1:3000/](http://127.0.0.1:3000/)
 
 ## Features
 
-1. Suer small (~150 LOC) router: fast and sexy [codingbean/macaw](https://packagist.org/packages/codingbean/macaw)
+1. Tiny router [TinyLara/TinyRoute](https://packagist.org/packages/tinylara/tinyroute), based on fast and sexy [codingbean/macaw](https://packagist.org/packages/codingbean/macaw)
 2. MVC architecture
 3. One of the Most powerful PHP ORM on Earth: [Laravel Eloquent](http://laravel.com/docs/4.2/eloquent)
 4. Powerful Laravel-style views loader
