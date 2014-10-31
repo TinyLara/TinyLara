@@ -4,6 +4,10 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 // BASE_PATH
 define('BASE_PATH', __DIR__);
 
+// BASE_URL
+$config = require BASE_PATH.'/config/config.php';
+define('BASE_URL', $config['base_url']);
+
 // Autoload
 require BASE_PATH.'/vendor/autoload.php';
 
