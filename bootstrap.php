@@ -8,6 +8,9 @@ define('BASE_PATH', __DIR__);
 $config = require BASE_PATH.'/config/config.php';
 define('BASE_URL', $config['base_url']);
 
+// TIME_ZONE
+date_default_timezone_set($config['time_zone']);
+
 // Autoload
 require BASE_PATH.'/vendor/autoload.php';
 
