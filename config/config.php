@@ -1,6 +1,6 @@
 <?php
 
 return [
-  'base_url' => 'http://127.0.0.1/',
+  'base_url' => '/',
   'time_zone' => 'UTC', // China use 'Asia/Shanghai'
 ];
