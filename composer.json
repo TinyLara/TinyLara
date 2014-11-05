@@ -5,6 +5,7 @@
   "license": "MIT",
   "require": {
     "tinylara/tinyroute": "dev-master",
+    "tinylara/tinyview": "dev-master",
     "illuminate/database": "*",
     "filp/whoops": "*",
     "nette/mail": "*",

@@ -75,10 +75,10 @@ Visit [http://127.0.0.1:3000/](http://127.0.0.1:3000/)
 
 ## Features
 
-1. Tiny router [TinyLara/TinyRoute](https://packagist.org/packages/tinylara/tinyroute), based on fast and sexy [codingbean/macaw](https://packagist.org/packages/codingbean/macaw)
+1. Tiny router [TinyLara/TinyRoute](https://github.com/TinyLara/TinyRoute), based on fast and sexy [codingbean/macaw](https://packagist.org/packages/codingbean/macaw)
 2. MVC architecture
 3. One of the Most powerful PHP ORM on Earth: [Laravel Eloquent](http://laravel.com/docs/4.2/eloquent)
-4. Powerful Laravel-style views loader
+4. Powerful Laravel-style view loader [TinyLara/TinyView](https://github.com/TinyLara/TinyView)
 5. Redis ready in Laravel-style
 6. Handy SMTP mailer
 
@@ -163,10 +163,10 @@ cd public && php -S 127.0.0.1:3000
 
 ##特性
 
-1. 微型路由包 [TinyLara/TinyRoute](https://packagist.org/packages/tinylara/tinyroute), 基于性感而快速的 [codingbean/macaw](https://packagist.org/packages/codingbean/macaw)
+1. 微型路由包 [TinyLara/TinyRoute](https://github.com/TinyLara/TinyRoute), 基于性感而快速的 [codingbean/macaw](https://packagist.org/packages/codingbean/macaw)
 2. MVC 架构
 3. 采用地球上最强大的 PHP ORM 之一：[Laravel Eloquent](http://laravel.com/docs/4.2/eloquent)
-4. 优雅而强大的 Laravel 式的视图加载器
+4. 优雅而强大的 Laravel 式的视图加载器 [TinyLara/TinyView](https://github.com/TinyLara/TinyView)
 5. 支持原生 PHP 操作 Redis，无需安装任何 PHP 扩展。
 6. 一行代码即可发送 SMTP 邮件。
 
