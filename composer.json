@@ -4,6 +4,7 @@
   "keywords": ["tiny", "simple", "framework", "laravel"],
   "license": "MIT",
   "require": {
+    "php": ">=5.4.0",
     "tinylara/tinyroute": "dev-master",
     "tinylara/tinyview": "dev-master",
     "illuminate/database": "*",
