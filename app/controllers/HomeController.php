@@ -21,5 +21,10 @@ class HomeController extends BaseController {
     return View::make('home')->with('article',Article::first())
                               ->withTitle('TinyLara :-D')
                               ->withFooBar('foo_bar');
+
+    // return String
+    return 'Hello TinyLara!';
+
+    // or you can return Nothing.
   }
 }
