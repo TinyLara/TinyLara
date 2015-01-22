@@ -33,7 +33,7 @@ cd TinyLara-1.0
 composer update
 ```
 
-Then modify `app/database.php` with right information and import `demo.sql`.
+Then modify `config/database.php` with right information and import `demo.sql`.
 
 ### Just see:
 
