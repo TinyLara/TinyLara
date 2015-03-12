@@ -9,7 +9,7 @@
                       /____/
 ```
 
-TinyLara is a Simple PHP Framework based on Composer, looks like a Tiny Laravel.
+TinyLara is a Simple PHP Framework based on Composer, looks like a Tiny Laravel. [Read the documentation](https://github.com/TinyLara/TinyLara/wiki).
 
 ## Start
 ### Download:
@@ -33,7 +33,7 @@ cd TinyLara-1.0
 composer update
 ```
 
-Then modify `app/database.php` with right information and import `demo.sql`.
+Then modify `config/database.php` with right information and import `demo.sql`.
 
 ### Just see:
 
