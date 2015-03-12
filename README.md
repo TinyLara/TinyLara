@@ -40,7 +40,11 @@ Then modify `app/database.php` with right information and import `demo.sql`.
 *config/routes.php :*
 
 ```php
-Route::get('', 'HomeController@home');
+Route::get('/', 'HomeController@home');
+
+Route::any('foo', function() {
+  echo "Foo!";
+});
 ```
 
 *app/controllers/HomeController.php :*
