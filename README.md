@@ -22,9 +22,9 @@ cd TinyLara
 OR:
 
 ```bash
-wget https://github.com/TinyLara/TinyLara/archive/v1.1.zip
-unzip v1.1.zip
-cd TinyLara-1.1
+wget https://github.com/TinyLara/TinyLara/archive/v1.2.zip
+unzip v1.2.zip
+cd TinyLara-1.2
 ```
 
 ### Install dependencies:
