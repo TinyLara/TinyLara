@@ -79,7 +79,7 @@ Visit [http://127.0.0.1:3000/](http://127.0.0.1:3000/)
 
 ## Features
 
-1. Tiny router [TinyLara/TinyRoute](https://github.com/TinyLara/TinyRoute), based on fast and sexy [codingbean/macaw](https://packagist.org/packages/codingbean/macaw)
+1. Tiny router [TinyLara/TinyRouter](https://github.com/TinyLara/TinyRouter), based on fast and sexy [codingbean/macaw](https://packagist.org/packages/codingbean/macaw)
 2. MVC architecture
 3. One of the Most powerful PHP ORM on Earth: [Laravel Eloquent](http://laravel.com/docs/4.2/eloquent)
 4. Powerful Laravel-style view loader [TinyLara/TinyView](https://github.com/TinyLara/TinyView)
