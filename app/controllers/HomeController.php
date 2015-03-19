@@ -6,6 +6,16 @@ class HomeController extends BaseController {
 
   public function home()
   {
+    $data = ['title'=>'你是谁？?', 'email'=>'1@baiducom'];
+    $validator = $this->validate($data, [
+      'title' => 'required|numeric|integer|min:3|max:4',
+      'email' => 'required|email',
+    ]);
+    if ( !$validator->success ) {
+      foreach ($validator->errors as $error) {
+        echo $error.'<br>';
+      }
+    }
     /*
     // mail sample
     Mail::to('foo@bar.io')->from('bar@foo.io')

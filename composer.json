@@ -7,10 +7,12 @@
     "php": ">=5.4.0",
     "tinylara/tinyrouter": "*",
     "tinylara/tinyview": "*",
+    "tinylara/tinyvalidator": "*",
     "illuminate/database": "*",
     "filp/whoops": "*",
     "nette/mail": "*",
-    "predis/predis": "*"
+    "predis/predis": "*",
+    "monolog/monolog": "1.13.1"
   },
   "autoload": {
     "classmap": [
