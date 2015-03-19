@@ -16,6 +16,7 @@ class HomeController extends BaseController {
         echo $error.'<br>';
       }
     }
+    Log::debug(1);
     /*
     // mail sample
     Mail::to('foo@bar.io')->from('bar@foo.io')

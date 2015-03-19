@@ -25,7 +25,12 @@ $capsule = new Capsule;
 $capsule->addConnection(require BASE_PATH.'/config/database.php');
 $capsule->bootEloquent();
 
+// Log
+$monolog = new \Monolog\Logger('system');
+$monolog->pushHandler(new \Monolog\Handler\StreamHandler(BASE_PATH.'/logs/app.log', \Monolog\Logger::ERROR));
+
 // whoops: php errors for cool kids
 $whoops = new \Whoops\Run;
 $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+$whoops->pushHandler(new \Whoops\Handler\PlainTextHandler($monolog));
 $whoops->register();
