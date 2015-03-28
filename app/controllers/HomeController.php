@@ -28,7 +28,7 @@ class HomeController extends BaseController {
     echo Redis::get('key');
     */
 
-    // view sample
+    // return View
     return View::make('home')->with('article',Article::first())
                               ->withTitle('TinyLara :-D')
                               ->withFooBar('foo_bar');
