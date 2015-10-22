@@ -6,7 +6,7 @@ class HomeController extends BaseController {
 
   public function home()
   {
-    var_dump(Article::count());
+    // var_dump(Article::count());
     $data = ['title'=>'你是谁？?', 'email'=>'1@baiducom'];
     $validator = $this->validate($data, [
       'title' => 'required|numeric|integer|min:3|max:4',
