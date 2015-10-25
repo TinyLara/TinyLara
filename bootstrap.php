@@ -26,6 +26,9 @@ $capsule->addConnection(require BASE_PATH.'/config/database.php');
 $capsule->bootEloquent();
 
 // Log
+if (!is_dir(BASE_PATH.'/logs/')) {
+  mkdir(BASE_PATH.'/logs/', 0700);
+}
 $monolog = new \Monolog\Logger('system');
 $monolog->pushHandler(new \Monolog\Handler\StreamHandler(BASE_PATH.'/logs/app.log', \Monolog\Logger::ERROR));
 
