@@ -8,11 +8,12 @@
     "tinylara/tinyrouter": "*",
     "tinylara/tinyview": "*",
     "tinylara/tinyvalidator": "*",
-    "illuminate/database": "*",
+    "illuminate/database": "~5.1",
     "filp/whoops": "*",
     "nette/mail": "*",
     "predis/predis": "*",
-    "monolog/monolog": "1.13.1"
+    "monolog/monolog": "1.13.1",
+    "danielstjules/stringy": "1.8"
   },
   "autoload": {
     "classmap": [
