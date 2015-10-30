@@ -1,4 +1,4 @@
-# *TinyLara*
+# *TinyLara* [![Travis](https://img.shields.io/travis/TinyLara/TinyLara.svg)](https://travis-ci.org/TinyLara/TinyLara)
 
 ```
   ______    _                      __
