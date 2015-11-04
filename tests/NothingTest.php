@@ -2,8 +2,7 @@
 /**
 * NothingTest
 */
-class NothingTest extends PHPUnit_Framework_TestCase
-{
+class NothingTest extends PHPUnit_Framework_TestCase {
   
   public function testNothing()
   {
