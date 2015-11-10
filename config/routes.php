@@ -1,6 +1,6 @@
 <?php
 
-use TinyLara\TinyRouter\TinyRouter as Route;
+use TinyLara\Routing\Router as Route;
 
 Route::get('/', 'HomeController@home');
 

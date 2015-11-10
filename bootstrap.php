@@ -18,7 +18,7 @@ date_default_timezone_set($config['time_zone']);
 require BASE_PATH.'/vendor/autoload.php';
 
 // View Loader
-class_alias('\TinyLara\TinyView\TinyView','View');
+class_alias('\TinyLara\View\View','View');
 
 // Eloquent ORM
 $capsule = new Capsule;
