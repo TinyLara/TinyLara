@@ -7,23 +7,8 @@ define('BASE_PATH', __DIR__);
 // VIEW_BASE_PATH
 define('VIEW_BASE_PATH', BASE_PATH.'/app/views/');
 
-// BASE_URL
-$config = require BASE_PATH.'/config/config.php';
-define('BASE_URL', $config['base_url']);
-
-// TIME_ZONE
-date_default_timezone_set($config['time_zone']);
-
 // Autoload
 require BASE_PATH.'/vendor/autoload.php';
-
-// View Loader
-class_alias('\TinyLara\View\View','View');
-
-// Eloquent ORM
-$capsule = new Capsule;
-$capsule->addConnection(require BASE_PATH.'/config/database.php');
-$capsule->bootEloquent();
 
 // Log
 if (!is_dir(BASE_PATH.'/logs/')) {
@@ -37,3 +22,18 @@ $whoops = new \Whoops\Run;
 $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
 $whoops->pushHandler(new \Whoops\Handler\PlainTextHandler($monolog));
 $whoops->register();
+
+// BASE_URL
+$config = require BASE_PATH.'/config/config.php';
+define('BASE_URL', $config['base_url']);
+
+// TIME_ZONE
+date_default_timezone_set($config['time_zone']);
+
+// Eloquent ORM
+$capsule = new Capsule;
+$capsule->addConnection(require BASE_PATH.'/config/database.php');
+$capsule->bootEloquent();
+
+// View Loader
+class_alias('\TinyLara\View\View','View');
