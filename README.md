@@ -9,7 +9,7 @@
                       /____/
 ```
 
-TinyLara is a Simple PHP Framework based on Composer, looks like a Tiny Laravel. [Read the documentation](https://github.com/TinyLara/TinyLara/wiki).
+TinyLara is a Simple PHP Framework based on Composer, looks like a Tiny Laravel. [Read the documentation](https://github.com/TinyLara/TinyLara/wiki). TinyLara supports PHP7 now!
 
 ## Start
 ### Download:
