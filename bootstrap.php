@@ -16,7 +16,6 @@ if (!is_dir(BASE_PATH.'/logs/')) {
 }
 $monolog = new \Monolog\Logger('system');
 $monolog->pushHandler(new \Monolog\Handler\StreamHandler(BASE_PATH.'/logs/app.log', \Monolog\Logger::ERROR));
-
 // whoops: php errors for cool kids
 $whoops = new \Whoops\Run;
 $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
@@ -26,7 +25,6 @@ $whoops->register();
 // BASE_URL
 $config = require BASE_PATH.'/config/config.php';
 define('BASE_URL', $config['base_url']);
-
 // TIME_ZONE
 date_default_timezone_set($config['time_zone']);
 

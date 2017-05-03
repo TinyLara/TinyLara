@@ -2,12 +2,14 @@
 /**
 * \HomeController
 */
+namespace App\Controller;
+
 class HomeController extends BaseController {
 
   public function home()
   {
     // var_dump(Article::count());
-    $data = ['title'=>'你是谁？?', 'email'=>'1@baiducom'];
+    $data = ['title'=>'123', 'email'=>'zhangxinxin@zhufaner.com'];
     $validator = $this->validate($data, [
       'title' => 'required|numeric|integer|min:3|max:4',
       'email' => 'required|email',
@@ -17,7 +19,7 @@ class HomeController extends BaseController {
         echo $error.'<br>';
       }
     }
-    Log::debug('First Debug Info.');
+    // Log::debug('First Debug Info.');
     /*
     // mail sample
     Mail::to('foo@bar.io')->from('bar@foo.io')
@@ -29,12 +31,12 @@ class HomeController extends BaseController {
     echo Redis::get('key');
     */
 
-    // return View
-    return View::make('home')->with('article',Article::first())
-                              ->withTitle('TinyLara :-D')
-                              ->withFooBar('foo_bar');
+    // // return View
+    // return View::make('home')->with('article',Article::first())
+    //                           ->withTitle('TinyLara :-D')
+    //                           ->withFooBar('foo_bar');
 
-    // return String
+    // return String 
     return 'Hello TinyLara!';
 
     // or you can return Nothing.
