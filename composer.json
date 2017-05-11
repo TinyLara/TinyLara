@@ -24,5 +24,8 @@
   },
   "config": {
     "preferred-install": "dist"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.1"
   }
 }

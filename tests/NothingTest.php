@@ -1,8 +1,10 @@
 <?php
+// Autoload
+use PHPUnit\Framework\TestCase;
 /**
 * NothingTest
 */
-class NothingTest extends PHPUnit_Framework_TestCase {
+class NothingTest extends TestCase {
   
   public function testNothing()
   {
