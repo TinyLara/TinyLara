@@ -2,9 +2,21 @@
 
 // PUBLIC_PATH
 define('PUBLIC_PATH', __DIR__);
+// BASE_PATH
+define('BASE_PATH', dirname(PUBLIC_PATH));
+// VIEW_BASE_PATH
+define('VIEW_BASE_PATH', BASE_PATH.'/app/views/');
 
-// bootstrap
-require PUBLIC_PATH.'/../bootstrap.php';
+// Autoload
+require BASE_PATH.'/vendor/autoload.php';
 
-// Routes and Begin processing
-require BASE_PATH.'/config/routes.php';
+$app = require_once BASE_PATH.'/bootstrap/app.php';
+
+$kernel = $app->make(TinyLara\Contracts\Kernel::class);
+
+
+$response = $kernel->handle(
+  $app->build(\TinyLara\Http\Request::class)
+);
+
+$response->send();

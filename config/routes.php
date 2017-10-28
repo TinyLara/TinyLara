@@ -1,7 +1,5 @@
 <?php
 
-use TinyLara\Routing\Router as Route;
-
 Route::get('/', 'HomeController@home');
 Route::get('/', function(){
   echo "<h2>FUCK</h2>";
@@ -30,5 +28,3 @@ Route::filter(function() {
     echo "Bar!<br>Filter Success!";
   });
 });
-
-Route::dispatch('View@process');
