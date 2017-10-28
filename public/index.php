@@ -16,7 +16,7 @@ $kernel = $app->make(TinyLara\Contracts\Kernel::class);
 
 
 $response = $kernel->handle(
-  $app->build(\TinyLara\Http\Request::class)
+  $app->build(TinyLara\Http\Request::class)
 );
 
 $response->send();
