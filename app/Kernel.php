@@ -14,6 +14,7 @@ class Kernel implements HttpKernel
   
   protected $bootstrappers = [
     \TinyLara\Stone\Bootstrap\LoadConfiguration::class,
+    \TinyLara\Stone\Bootstrap\RegisterProviders::class,
     // 'Illuminate\Foundation\Bootstrap\DetectEnvironment',
     // 'Illuminate\Foundation\Bootstrap\LoadConfiguration',
     // 'Illuminate\Foundation\Bootstrap\ConfigureLogging',
@@ -65,6 +66,7 @@ class Kernel implements HttpKernel
   protected function commands() {}
 
   protected function logError(Throwable $exception) {
+    var_dump($exception);die;
     $formattedException = array(
       'class' => get_class($exception),
       'message' => $exception->getMessage(),

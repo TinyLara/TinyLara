@@ -8,6 +8,7 @@ class HomeController extends BaseController {
 
   public function home()
   {
+    \Log::debug('============');
     // var_dump(Article::count());
     $data = ['title'=>'123', 'email'=>'zhangxinxin@zhufaner.com'];
     $validator = $this->validate($data, [

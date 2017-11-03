@@ -14,7 +14,6 @@ $app = require_once BASE_PATH.'/bootstrap/app.php';
 
 $kernel = $app->make(TinyLara\Contracts\Kernel::class);
 
-
 $response = $kernel->handle(
   $app->build(TinyLara\Http\Request::class)
 );
