@@ -4,6 +4,7 @@ namespace App;
 
 use TinyLara\Stone\Application;
 use TinyLara\Contracts\Kernel as HttpKernel;
+use TinyLara\Pipeline\Pipeline;
 
 use Exception, Throwable;
 
@@ -25,7 +26,7 @@ class Kernel implements HttpKernel
     // 'Illuminate\Foundation\Bootstrap\BootProviders',
   ];
 
-  public $routeMiddleware = [
+  public $middleware = [
     'test' => \App\Middleware\Test::class,
   ];
 
@@ -49,14 +50,24 @@ class Kernel implements HttpKernel
     try {
       $this->bootstrap();
 
-      require BASE_PATH.'/config/routes.php';
-      $request->response->return = \Route::dispatch();
-      return $request->response;
+      return (new Pipeline($this->getApplication()))
+                  ->send($request)
+                  ->through($this->middleware)
+                  ->then($this->dispatchToRouter());
     } catch (Exception $e) {
       $this->logError($e);
     } catch (Throwable $e) {
       $this->logError($e);
     }
+  }
+
+  public function dispatchToRouter()
+  {
+    return function ($request) {
+      require BASE_PATH.'/config/routes.php';
+      $request->response->return = \Route::dispatch();
+      return $request->response;
+    };
   }
 
   protected function bootstrappers()
