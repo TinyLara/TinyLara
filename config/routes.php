@@ -2,25 +2,21 @@
 
 Route::get('/', 'HomeController@home');
 Route::get('/', function(){
-  echo "<h2>FUCK</h2>";
+  echo "<h2>Hello!</h2>";
 });
 
 Route::group(['prefix'=>'zhang','namespace'=>'Zhang','middleware'=>'test'],function(){
   Route::group(['prefix'=>'abc'],function(){
-    Route::get('test:any',function() {
-      echo  'fuck';
+    Route::get(':any',function() {
+      echo 'zhang/abc/:any succed!';
     });
   });
-  Route::group(['prefix'=>'def','namespace'=>'Test'],function(){
-    Route::get('fuck:any','fuck@abc');
-  });
 });
-
-Route::get('shite','Abc@abc');
 
 Route::any('foo', function() {
   echo "Foo!";
 });
+
 Route::filter(function() {
   return isset($_GET['token']) && $_GET['token'] == 1;
 }, function(){
